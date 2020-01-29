@@ -1,0 +1,24 @@
+{
+  "projectileName" : "pat_kagKnife",
+  "image" : "knife.png",
+  "physics" : "pat_kag",
+  "timeToLive" : 10,
+  "animationCycle" : 1,
+  "frameNumber" : 1,
+  "speed" : 100,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/pat/knifeandgrenade/projectiles/knife.config"
+    }
+  ],
+  "power" : 60.0,
+  "knockback" : 10,
+  "damageKind" : "dagger",
+  "damageTeam" : { "type" : "indiscriminate" },
+  "damagePoly" : [ [-2, -3], [8, -3], [8, 2], [-2, 2] ],
+  
+  "scripts" : [ "/pat/knifeandgrenade/projectiles/kag.lua" ]
+}
+
+

@@ -1,0 +1,44 @@
+{
+  "itemName" : "pat_knifeandgrenade",
+  "price" : 1000,
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "used by knife and grenade summoning wizards",
+  "shortdescription" : "knife and grenade magic",
+  "tooltipKind" : "base",
+  "category" : "death",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","ranged"],
+  "level" : 1,
+
+  "inventoryIcon" : "icon.png",
+
+  "animation" : "knifeandgrenade.animation",
+
+  "baseOffset" : [0, 0],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/pat/knifeandgrenade/knifeandgrenade.lua"],
+		"name" : "death",
+    "class" : "GunFire",
+		
+		"projectiles" : ["pat_kagKnife", "pat_kagGrenade"],
+		
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      } 
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

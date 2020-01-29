@@ -1,0 +1,32 @@
+{
+  "globalTagDefaults" : {
+    "paletteSwaps" : ""
+  },
+
+  "animatedParts" : {
+    "parts" : {
+      "weapon" : {
+        "properties" : {
+          "centered" : true,
+          "offset" : [0, 0],
+          "transformationGroups" : ["weapon"]
+        }
+      }
+    }
+  },
+
+  "rotationGroups" : {
+    "weapon" : {
+      "angularVelocity" : 0
+    }
+  },
+
+  "transformationGroups" : {
+    "weapon" : {},
+    "muzzle" : {}
+  },
+
+  "sounds" : {
+    "fire" : []
+  }
+}
