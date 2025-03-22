@@ -1,9 +1,9 @@
 {
-  "input" : [
-    { "item" : "bomb", "count" : 1 },
-    { "item" : "throwingknife", "count" : 1 },
-    { "item" : "essence", "count" : 100 }
+  "input": [
+    { "item": "bomb", "count": 1 },
+    { "item": "throwingknife", "count": 1 },
+    { "item": "essence", "count": 100 }
   ],
-  "output" : { "item" : "pat_knifeandgrenade", "count" : 1 },
-  "groups" : [ "plain", "all" ]
+  "output": { "item": "pat_knifeandgrenade", "count": 1 },
+  "groups": [ "plain", "all" ]
 }

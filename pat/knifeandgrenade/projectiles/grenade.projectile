@@ -1,22 +1,22 @@
 {
-  "projectileName" : "pat_kagGrenade",
-  "image" : "grenade.png",
-  "physics" : "pat_kag",
-  "timeToLive" : 10,
-  "animationCycle" : 1,
-  "frameNumber" : 1,
-  "speed" : 100,
-  "actionOnReap" : [
+  "projectileName": "pat_kagGrenade",
+  "image": "grenade.png",
+  "physics": "pat_kag",
+  "timeToLive": 10,
+  "animationCycle": 1,
+  "frameNumber": 1,
+  "speed": 100,
+  "actionOnReap": [
     {
-      "action" : "config",
-      "file" : "/pat/knifeandgrenade/projectiles/explosion.config"
+      "action": "config",
+      "file": "/pat/knifeandgrenade/projectiles/explosion.config"
     }
   ],
-  "power" : 60,
-  "damageType" : "NoDamage",
-  "damageKind" : "default",
-  "damageTeam" : { "type" : "indiscriminate" },
-  "damagePoly" : [ [-6, 0], [-4, -4], [0, -6], [4, -4], [6, 0], [4, 4], [0, 6], [-4, 4] ],
-  
-  "scripts" : [ "/pat/knifeandgrenade/projectiles/kag.lua" ]
+  "power": 60,
+  "damageType": "NoDamage",
+  "damageKind": "default",
+  "damageTeam": { "type": "indiscriminate" },
+  "damagePoly": [ [ -6, 0 ], [ -4, -4 ], [ 0, -6 ], [ 4, -4 ], [ 6, 0 ], [ 4, 4 ], [ 0, 6 ], [ -4, 4 ] ],
+
+  "scripts": [ "/pat/knifeandgrenade/projectiles/kag.lua" ]
 }
