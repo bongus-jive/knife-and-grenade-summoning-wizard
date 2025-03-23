@@ -49,6 +49,7 @@ function fire()
   local aimAngle = math.atan(aimPos[2] - centerPos[2], aimPos[1] - centerPos[1])
 
   local params = {}
+  params.aimHeight = math.max(mPos[2], aimPos[2])
   params.powerMultiplier = activeItem.ownerPowerMultiplier()
 
   for i = 1, self.projectileCount do
