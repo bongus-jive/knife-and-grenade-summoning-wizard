@@ -9,36 +9,27 @@
   "category": "death",
   "twoHanded": true,
   "itemTags": [ "weapon", "ranged" ],
-  "level": 1,
 
   "inventoryIcon": "icon.png",
 
-  "animation": "knifeandgrenade.animation",
-
-  "baseOffset": [ 0, 0 ],
-
-  "scripts": [ "/items/active/weapons/ranged/gun.lua" ],
-
-  "elementalType": "physical",
-
-  "primaryAbility": {
-    "scripts": [ "/pat/knifeandgrenade/knifeandgrenade.lua" ],
-    "name": "death",
-    "class": "GunFire",
-
-    "projectiles": [ "pat_kagKnife", "pat_kagGrenade" ],
-
-    "stances": {
-      "idle": {
-        "armRotation": 0,
-        "weaponRotation": 0,
-        "twoHanded": true,
-
-        "allowRotate": true,
-        "allowFlip": true
-      }
+  "animationCustom": {
+    "animatedParts": {
+      "parts": { "": { } }
     }
   },
 
-  "builder": "/items/buildscripts/buildunrandweapon.lua"
+  "scripts": [ "knifeandgrenade.lua" ],
+
+  "projectileTypes": [ "pat_kagKnife", "pat_kagGrenade" ],
+  "projectileCount": 2,
+  "spawnHeight": 50,
+  "spawnRadius": 5,
+  "speedRange": [ 90, 120 ],
+  "inaccuracy": 0.02,
+  "cooldownTime": 0.04,
+  "aimVerticalOffset": -0.25,
+  "cursors": {
+    "idle": "/cursors/chargeidle.cursor",
+    "firing": "/cursors/charge2.cursor"
+  }
 }
