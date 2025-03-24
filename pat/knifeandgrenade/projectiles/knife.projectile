@@ -34,7 +34,7 @@
         "image": "/pat/knifeandgrenade/projectiles/knife.png",
         "layer": "middle",
         "timeToLive": 0.25,
-        "destructionTime": 0.25,
+        "destructionTime": 0.5,
         "destructionAction": "shrink",
         "variance": {
           "timeToLive": 0.15
