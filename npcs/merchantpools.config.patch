@@ -1,0 +1,7 @@
+[
+  {
+    "op": "add",
+    "path": "/wizardmerchant/0/1/-",
+    "value": { "item": { "name": "pat_knifeandgrenade" }, "price": 5000 }
+  }
+]
