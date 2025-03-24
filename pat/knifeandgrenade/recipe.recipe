@@ -5,5 +5,5 @@
     { "item": "essence", "count": 100 }
   ],
   "output": { "item": "pat_knifeandgrenade", "count": 1 },
-  "groups": [ "plain", "all" ]
+  "groups": [ "treasuredtrophies" ]
 }
