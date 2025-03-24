@@ -17,3 +17,21 @@ function update()
     mcontroller.applyParameters({collisionEnabled = true})
   end
 end
+
+function bounce()
+  if self.bounced then return end
+  self.bounced = true 
+
+  local physics = config.getParameter("bouncePhysics")
+  if physics then
+    mcontroller.applyParameters(physics)
+  end
+
+  local ttl = config.getParameter("bounceTtl")
+  if ttl then
+    if type(ttl) == "table" then
+      ttl = ttl[1] + (math.random() * (ttl[2] - ttl[1]))
+    end
+    projectile.setTimeToLive(ttl)
+  end
+end

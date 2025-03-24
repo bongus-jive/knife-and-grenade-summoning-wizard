@@ -1,22 +1,30 @@
 {
   "projectileName": "pat_kagGrenade",
   "image": "grenade.png",
-  "physics": "pat_kag",
-  "timeToLive": 10,
-  "animationCycle": 1,
-  "frameNumber": 1,
-  "speed": 100,
-  "actionOnReap": [
-    {
-      "action": "config",
-      "file": "/pat/knifeandgrenade/projectiles/explosion.config"
-    }
-  ],
-  "power": 60,
-  "damageType": "NoDamage",
-  "damageKind": "default",
-  "damageTeam": { "type": "indiscriminate" },
-  "damagePoly": [ [ -6, 0 ], [ -4, -4 ], [ 0, -6 ], [ 4, -4 ], [ 6, 0 ], [ 4, 4 ], [ 0, 6 ], [ -4, 4 ] ],
+  "power": 12,
+  "timeToLive": 6,
+  "bounces": 1,
+  "renderLayer": "ForegroundEntity",
 
-  "scripts": [ "/pat/knifeandgrenade/projectiles/kag.lua" ]
+  "actionOnReap": [
+    { "action": "config", "file": "/pat/knifeandgrenade/projectiles/explosion.config" }
+  ],
+
+  "damageKind": "default",
+  "damageType": "NoDamage",
+  "damageTeam": { "type": "indiscriminate" },
+  "damagePoly": [ [ 5, 0 ], [ 0, 5 ], [ -5, 0 ], [ 0, -5 ] ],
+
+  "movementSettings": {
+    "gravityMultiplier": 1,
+    "gravityEnabled": false,
+    "bounceFactor": 0.35,
+    "stopOnFirstBounce": true
+  },
+
+  "scripts": [ "kag.lua" ],
+  "bounceTtl": [ 0.04, 0.36 ],
+  "bouncePhysics": {
+    "gravityEnabled": true
+  }
 }
