@@ -1,12 +1,13 @@
 {
   "itemName": "pat_knifeandgrenade",
-  "price": 1000,
+  "price": 500,
   "maxStack": 1,
-  "rarity": "Essential",
-  "description": "used by knife and grenade summoning wizards",
-  "shortdescription": "knife and grenade magic",
+  "rarity": "Legendary",
+  "description": "Spell used by knife & grenade summoning wizards to summon knives & grenades.",
+  "shortdescription": "Knife & Grenade Magic",
+  "tooltipFields": { "subtitle": "death" },
   "tooltipKind": "base",
-  "category": "death",
+  "category": "staff",
   "twoHanded": true,
   "itemTags": [ "weapon", "ranged" ],
 
