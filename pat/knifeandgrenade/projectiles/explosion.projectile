@@ -1,13 +1,14 @@
 {
   "projectileName": "pat_kagExplosion",
-  "image": "explosion.png",
-  "animationCycle": 0.2,
+  "image": "/projectiles/explosions/grenadeexplosion/grenadeexplosion.png",
   "frameNumber": 6,
-  "speed": 0,
-  "damagePoly": [ [ -36, 0 ], [ -24, -24 ], [ 0, -36 ], [ 24, -24 ], [ 36, 0 ], [ 24, 24 ], [ 0, 36 ], [ -24, 24 ] ],
+  "animationCycle": 0.2,
   "animationLoops": false,
+  "speed": 0,
+  "bounces": -1,
   "piercing": true,
   "flippable": true,
+  "damageKind": "default",
   "damageTeam": { "type": "indiscriminate" },
-  "damageKind": "default"
+  "damagePoly": [ [ -36, 0 ], [ -25, -25 ], [ 0, -36 ], [ 25, -25 ], [ 36, 0 ], [ 25, 25 ], [ 0, 36 ], [ -25, 25 ] ]
 }
